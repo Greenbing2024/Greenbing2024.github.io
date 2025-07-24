@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>解决黑苹果MacOS 10.15麦克风权限问题 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="问题描述一时兴起拿了老索尼电脑SVS131A11T装了个黑苹果，起先十分顺利，WiFi、蓝牙、睡眠均正常">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决黑苹果MacOS 10.15麦克风权限问题">
+<meta property="og:url" content="http://example.com/2025/07/24/%E8%A7%A3%E5%86%B3%E9%BB%91%E8%8B%B9%E6%9E%9CMacOS-10-15%E9%BA%A6%E5%85%8B%E9%A3%8E%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="问题描述一时兴起拿了老索尼电脑SVS131A11T装了个黑苹果，起先十分顺利，WiFi、蓝牙、睡眠均正常">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8810.30.23.png?sign=8UefzPXcaufAqSIDgO8liBBOUrJdbxjbECuHgNfNy0E=:0">
+<meta property="og:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8810.30.45.png?sign=XzbPxOA-GeZhxP_a2r30KkuxPKxHDad8wde19t8l_6w=:0">
+<meta property="og:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8810.30.55.png?sign=KMJhVVRPosHjLs92uFQVqrp0PWHr5xYg4WwbINQdfDc=:0">
+<meta property="og:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/IMG_20250724_105129.jpg?sign=9WRa4unL7N1aHFOI2cOZA9M53n2M1LL1hUPhDrbo77I=:0">
+<meta property="og:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/IMG_20250724_110013.jpg?sign=4nmtSqx2dQaj2iTP6C-drfmNq1RL7-Bsi33smkR6Ib8=:0">
+<meta property="og:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.26.41.png?sign=cYWRnEx4SD_jj0zZrD0kx6AZcl8z8AvZBtH6ySoDW14=:0">
+<meta property="og:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.27.07.png?sign=uWVzMjR8I1dhOqnvCNMgi6redBRdS0qAL8ew44H-jlo=:0">
+<meta property="og:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.27.32.png?sign=-HGvS1fx9Iw7IHq3vnBJ6wtGhVkaAlvcqI1kQzE0b6w=:0">
+<meta property="og:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.43.52.png?sign=g59mssBQpCZ7AQbuhEoO_GrAdjlLp9j_2C-X1pkWGPo=:0">
+<meta property="og:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.48.57.png?sign=bfJcFU0WaRGsd5EgLuJE2GTyVbZyoyXuQ1FmcxCW8BM=:0">
+<meta property="og:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.50.48.png?sign=TomcufR_aBRGc9N6Ff4Vz-LDd8dfuga-H8-tf1UpvhI=:0">
+<meta property="article:published_time" content="2025-07-24T07:49:23.000Z">
+<meta property="article:modified_time" content="2025-07-24T07:54:42.436Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8810.30.23.png?sign=8UefzPXcaufAqSIDgO8liBBOUrJdbxjbECuHgNfNy0E=:0">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-解决黑苹果MacOS-10-15麦克风权限问题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/07/24/%E8%A7%A3%E5%86%B3%E9%BB%91%E8%8B%B9%E6%9E%9CMacOS-10-15%E9%BA%A6%E5%85%8B%E9%A3%8E%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98/" class="article-date">
+  <time class="dt-published" datetime="2025-07-24T07:49:23.000Z" itemprop="datePublished">2025-07-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      解决黑苹果MacOS 10.15麦克风权限问题
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>一时兴起拿了老索尼电脑SVS131A11T装了个黑苹果，起先十分顺利，WiFi、蓝牙、睡眠均正常</p>
+<span id="more"></span>
+
+<p><img src="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8810.30.23.png?sign=8UefzPXcaufAqSIDgO8liBBOUrJdbxjbECuHgNfNy0E=:0" alt="img"></p>
+<p>之后尝试安装了微信，腾讯会议等软件，均发现有麦克风摄像头无法自动授予访问权限的问题，到隐私偏好设置中没有任何选项</p>
+<p><img src="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8810.30.45.png?sign=XzbPxOA-GeZhxP_a2r30KkuxPKxHDad8wde19t8l_6w=:0" alt="img"></p>
+<p><img src="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8810.30.55.png?sign=KMJhVVRPosHjLs92uFQVqrp0PWHr5xYg4WwbINQdfDc=:0" alt="img"></p>
+<p>网上可查询到的教程均不适用于Catalina 10.15，故自编教程</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="1-禁用系统完整性保护（SIP）"><a href="#1-禁用系统完整性保护（SIP）" class="headerlink" title="1.禁用系统完整性保护（SIP）"></a>1.禁用系统完整性保护（SIP）</h3><p>在黑苹果OC引导界面按空格键，选择Recovery 10.15.7(dmg)，按enter进入Recovery模式</p>
+<p><img src="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/IMG_20250724_105129.jpg?sign=9WRa4unL7N1aHFOI2cOZA9M53n2M1LL1hUPhDrbo77I=:0" alt="请选择你的拍屏导师"></p>
+<p>选择“实用工具”栏下的“终端”，执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">csrutil status</span><br></pre></td></tr></table></figure>
+
+<p>如果显示“System Integrity Protection status: enabled.” 说明SIP处于打开状态，需执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">csrutil <span class="built_in">disable</span></span><br></pre></td></tr></table></figure>
+
+<p>屏幕显示”System Integrity Protection is off.” 表示SIP已经关闭。此时可以退出终端，重启电脑。</p>
+<p>注：如果显示“System Integrity Protection status: unknown” 建议也disable一下。 </p>
+<p><img src="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/IMG_20250724_110013.jpg?sign=4nmtSqx2dQaj2iTP6C-drfmNq1RL7-Bsi33smkR6Ib8=:0" alt="img"></p>
+<h3 id="2-获取APP的string值"><a href="#2-获取APP的string值" class="headerlink" title="2.获取APP的string值"></a>2.获取APP的string值</h3><p>打开应用程序目录夹，右键选择需要添加权限的程序，显示包内容</p>
+<p><img src="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.26.41.png?sign=cYWRnEx4SD_jj0zZrD0kx6AZcl8z8AvZBtH6ySoDW14=:0" alt="img"></p>
+<p>打开Contents文件夹，找到 Info.plist文件，并选择文本编辑打开此文件<img src="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.27.07.png?sign=uWVzMjR8I1dhOqnvCNMgi6redBRdS0qAL8ew44H-jlo=:0" alt="img"></p>
+<p>此处即可找到腾讯会议的string值为com.tencent.meeting，其他软件方法均相同</p>
+<p><img src="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.27.32.png?sign=-HGvS1fx9Iw7IHq3vnBJ6wtGhVkaAlvcqI1kQzE0b6w=:0" alt="img"></p>
+<p>以上内容应该是适用于所有版本的MacOS，之后的会略有不同</p>
+<h3 id="3-获取权限"><a href="#3-获取权限" class="headerlink" title="3.获取权限"></a>3.获取权限</h3><p>打开终端，首先检查TCC.db表结构:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> sqlite3 ~/Library/Application\ Support/com.apple.TCC/TCC.db <span class="string">&quot;PRAGMA table_info(access);&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>此时会要求确认password，输入回车即可，终端为保护密码会不显示输入内容</p>
+<p><img src="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.43.52.png?sign=g59mssBQpCZ7AQbuhEoO_GrAdjlLp9j_2C-X1pkWGPo=:0" alt="img"></p>
+<p>可见表结构为12列，故使用以下指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> sqlite3 ~/Library/Application\ Support/com.apple.TCC/TCC.db <span class="string">&quot;INSERT OR REPLACE INTO access VALUES(</span></span><br><span class="line"><span class="string">  &#x27;kTCCServiceMicrophone&#x27;,  -- service</span></span><br><span class="line"><span class="string">  &#x27;com.tencent.meeting&#x27;,    -- client</span></span><br><span class="line"><span class="string">  0,                        -- client_type (0=Bundle ID)</span></span><br><span class="line"><span class="string">  1,                        -- allowed (1=允许)</span></span><br><span class="line"><span class="string">  1,                        -- prompt_count</span></span><br><span class="line"><span class="string">  NULL,                     -- csreq (不需要)</span></span><br><span class="line"><span class="string">  NULL,                     -- policy_id</span></span><br><span class="line"><span class="string">  0,                        -- indirect_object_identifier_type</span></span><br><span class="line"><span class="string">  &#x27;UNUSED&#x27;,                 -- indirect_object_identifier</span></span><br><span class="line"><span class="string">  NULL,                     -- indirect_object_code_identity</span></span><br><span class="line"><span class="string">  0,                        -- flags</span></span><br><span class="line"><span class="string">  strftime(&#x27;%s&#x27;,&#x27;now&#x27;)      -- last_modified (当前时间戳)</span></span><br><span class="line"><span class="string">);&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>仍会需要密码，输入回车即可</p>
+<p><img src="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.48.57.png?sign=bfJcFU0WaRGsd5EgLuJE2GTyVbZyoyXuQ1FmcxCW8BM=:0" alt="img"></p>
+<p>重启腾讯会议，发现此时麦克风能够正常打开，隐私偏好设置中也有了腾讯会议</p>
+<p><img src="http://alist.greenbing.xyz:5244/d/%E5%85%B1%E4%BA%AB/%E6%88%AA%E5%B1%8F2025-07-24%20%E4%B8%8A%E5%8D%8811.50.48.png?sign=TomcufR_aBRGc9N6Ff4Vz-LDd8dfuga-H8-tf1UpvhI=:0" alt="img"></p>
+<p>如果想开启摄像头，service值为：kTCCServiceCamera</p>
+<p>如果想开启摄像头，service值为：kTCCServiceAll</p>
+<p>此外，附上远景论坛中17列的指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> sqlite3 ~/Library/Application\ Support/com.apple.TCC/TCC.db <span class="string">&quot;INSERT or REPLACE INTO access VALUES(&#x27;kTCCServiceMicrophone&#x27;,&#x27;com.tencent.xinWeChat&#x27;,0,1,1,1,NULL,NULL,&#x27;UNUSED&#x27;,1,0,1551892126,0,0,0,0,0);&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>以及csdn中13列的指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlite3 ~/Library/application\ Support/com.apple.TCC/TCC.db <span class="string">&quot;REPLACE INTO access VALUES(&#x27;kTCCServiceAll&#x27;,&#x27;com.apple.FinalCut&#x27;,0,2,0,1,NULL,NULL,NULL,&#x27;UNUSED&#x27;,NULL,0,1608354323);&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>教程结束，<del>我要去吃拼好饭了</del></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/07/24/%E8%A7%A3%E5%86%B3%E9%BB%91%E8%8B%B9%E6%9E%9CMacOS-10-15%E9%BA%A6%E5%85%8B%E9%A3%8E%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98/" data-id="cmdh3e17t00004gzo4oy94p1h" data-title="解决黑苹果MacOS 10.15麦克风权限问题" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2025/07/24/Ciallo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Ciallo~</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/07/">July 2025</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/07/24/%E8%A7%A3%E5%86%B3%E9%BB%91%E8%8B%B9%E6%9E%9CMacOS-10-15%E9%BA%A6%E5%85%8B%E9%A3%8E%E6%9D%83%E9%99%90%E9%97%AE%E9%A2%98/">解决黑苹果MacOS 10.15麦克风权限问题</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/24/Ciallo/">Ciallo~</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
